@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dynamic Animation</title>
+  <style>
+    body {
+      margin: 0;
+      overflow: hidden;
+      background-color: #000;
+      color: white;
+      font-family: Helvetica, Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      text-align: center;
+      position: relative;
+    }
+
+    .content {
+      width: 80%;
+      z-index: 1;
+    }
+
+    .content h1 {
+      font-size: 12em;
+      margin: 0.5em 0;
+      line-height: 1em;
+    }
+
+    .content p {
+      font-size: 2em;
+      margin: 0.5em 0;
+      color: gray;
+    }
+
+    .circle {
+      position: absolute;
+      border-radius: 50%;
+      opacity: 0.8;
+      transition: all 0.5s ease;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="content">
+    <h1>Dynamic Animation</h1>
+    <p>Enjoy the colorful moving spheres!</p>
+    <p>Created by Your Name</p>
+  </div>
+  <script src="animation.js"></script>
+</body>
+
+</html>
